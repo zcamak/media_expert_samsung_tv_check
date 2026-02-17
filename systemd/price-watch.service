@@ -1,0 +1,13 @@
+[Unit]
+Description=Daily price watch
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/mytools/samsung_tv
+EnvironmentFile=%h/mytools/samsung_tv/.env
+ExecStart=%h/mytools/samsung_tv/.venv/bin/python %h/mytools/samsung_tv/execution/price_watch.py
+Restart=on-failure
+RestartSec=1h
+
+[Install]
+WantedBy=default.target

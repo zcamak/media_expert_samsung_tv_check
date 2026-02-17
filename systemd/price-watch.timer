@@ -1,0 +1,10 @@
+[Unit]
+Description=Run price watch daily
+
+[Timer]
+OnCalendar=*-*-* 08:00:00
+Persistent=true
+Unit=price-watch.service
+
+[Install]
+WantedBy=timers.target
