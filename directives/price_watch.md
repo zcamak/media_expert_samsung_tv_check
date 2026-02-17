@@ -45,9 +45,9 @@ Description=Daily price watch
 
 [Service]
 Type=oneshot
-WorkingDirectory=/home/kaminski/myprojects/samsungtv_check
-EnvironmentFile=/home/kaminski/myprojects/samsungtv_check/.env
-ExecStart=/usr/bin/python3 /home/kaminski/myprojects/samsungtv_check/execution/price_watch.py
+WorkingDirectory=%h/mytools/samsung_tv
+EnvironmentFile=%h/mytools/samsung_tv/.env
+ExecStart=%h/mytools/samsung_tv/.venv/bin/python %h/mytools/samsung_tv/execution/price_watch.py
 Restart=on-failure
 RestartSec=1h
 
