@@ -30,9 +30,9 @@ Monitor product price on a website daily and get Telegram notifications when the
 ### 2. Clone and Run Setup
 
 ```bash
-git clone https://github.com/yourusername/samsungtv_check.git
-cd samsungtv_check
-bash setup.sh
+git clone https://github.com/zcamak/media_expert_samsung_tv_check.git
+cd media_expert_samsung_tv_check/
+./setup.sh
 ```
 
 The script will:
