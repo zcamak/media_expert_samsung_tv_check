@@ -151,3 +151,7 @@ systemctl --user restart price-watch.timer
 ## License
 
 MIT
+
+## Attribution
+
+The 3-layer architecture (AGENTS.md) is based on [Nick Saraev's](https://www.youtube.com/@nicksaraev) approach to reliable agent systems with deterministic execution layers.
